@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$primary: blue !default;
+$secondary: pink !default;
+$success: green !default;
+$info: cyan !default;
+$warning: yellow !default;
+$danger: red !default;
+$light: gray !default;
+$dark: black !default;
+$purple: #cf649a;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "purple": $purple
+) !default;
+
+$font-family-base: 'Pacifico', cursive; 
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.card {
+    @extend .card; 
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: $purple;
+}
+
+
